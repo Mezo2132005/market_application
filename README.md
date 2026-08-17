@@ -1,17 +1,5 @@
 # market_application
 
-A new Flutter project.
+<img width="339" height="719" alt="T2" src="https://github.com/user-attachments/assets/659765ab-1397-484f-8235-26a214753fb8" />
+<img width="341" height="709" alt="T2_1" src="https://github.com/user-attachments/assets/985fc34f-3d5b-4228-b8c9-78035adb19fb" />
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
