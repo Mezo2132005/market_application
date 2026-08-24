@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 
 class EmailLogin extends StatelessWidget {
+  const EmailLogin({super.key});
+
 
           
 

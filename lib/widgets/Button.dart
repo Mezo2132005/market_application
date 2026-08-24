@@ -5,7 +5,7 @@ class Button extends StatelessWidget {
   
   String data = "Login";
 
-  Button(this.data);
+  Button(this.data, {super.key});
   
   @override
   Widget build(BuildContext context) {

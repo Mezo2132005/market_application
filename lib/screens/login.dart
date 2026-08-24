@@ -81,7 +81,7 @@ class Login extends StatelessWidget {
 
                         TextButton(
                           onPressed: () {
-                            authent(1);;
+                            authent(1);
                           },
                           child: const Text(
                             "Signup",

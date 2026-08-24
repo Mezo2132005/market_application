@@ -1,4 +1,8 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:market_application/widgets/home_slider.dart';
+import 'package:market_application/widgets/product_card.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -6,7 +10,9 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Colors.white,
         title: Image.asset("assets/images/Group.png", scale: .8,),
         centerTitle: true,
         toolbarHeight: 100,
@@ -46,8 +52,13 @@ class Home extends StatelessWidget {
                   ),
                 ),
               ),
-            )
-            
+            ),
+
+          HomeSlider(),
+          
+          ProductCard()
+
+
           ],),),);
   }
 }
