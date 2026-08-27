@@ -1,17 +1,30 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:market_application/widgets/category_with_seeall.dart';
 import 'package:market_application/widgets/home_slider.dart';
-import 'package:market_application/widgets/product_card.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:market_application/widgets/scroll_product_list.dart';
+import 'package:market_application/widgets/scroll_product_list_2.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
+
+  static const List<Widget> scrollScreen = [
+
+          CategoryWithSeeall(txt: "Exclusive Offer"),
+
+          ScrollProductList(),
+
+          CategoryWithSeeall(txt: "Best Selling"),
+
+          ScrollProductList2(),
+
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        scrolledUnderElevation: 0,
         backgroundColor: Colors.white,
         title: Image.asset("assets/images/Group.png", scale: .8,),
         centerTitle: true,
@@ -55,8 +68,13 @@ class Home extends StatelessWidget {
             ),
 
           HomeSlider(),
-          
-          ProductCard()
+
+          Expanded(
+              child: ListView.builder(
+                itemBuilder: ((context, index) => scrollScreen[index]),
+                itemCount: scrollScreen.length,
+              ),
+            ),
 
 
           ],),),);

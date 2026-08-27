@@ -1,8 +1,10 @@
 
 import 'package:flutter/material.dart';
+import 'package:market_application/models/card_model.dart';
 
 class ProductCard extends StatelessWidget {
-  const ProductCard({super.key});
+  const ProductCard({super.key,required this.cardModel });
+  final CardModel cardModel;
 
   @override
   Widget build(BuildContext context) {
@@ -23,24 +25,24 @@ class ProductCard extends StatelessWidget {
                   height: 80,
                   width: 100,
                   decoration: BoxDecoration(
-                  image: DecorationImage(image: AssetImage("assets/images/Panana.png"),fit: BoxFit.fitWidth),
+                  image: DecorationImage(image: AssetImage(cardModel.image),fit: BoxFit.fitWidth),
                 ),),
               ),
             ),
             SizedBox(height: 10,),
             Padding(
               padding: const EdgeInsets.only(left: 10),
-              child: Text("Organic Bananas",style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
+              child: Text(cardModel.product,style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 10),
-              child: Text("7pcs, Priceg",style: TextStyle(fontSize: 14,color: Color(0xff7C7C7C)),),
+              child: Text(cardModel.merchent,style: TextStyle(fontSize: 14,color: Color(0xff7C7C7C)),),
             ),
             SizedBox(height: 10,),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-              Text("\$4.99",style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
+              Text("\$${cardModel.price}",style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
               Padding(
                 padding: const EdgeInsetsGeometry.only(bottom: 10),
                 child: Container(decoration: BoxDecoration(color: Colors.green, borderRadius: BorderRadiusGeometry.all(Radius.circular(17))),height: 46,width: 46,child: Icon(Icons.add,color: Colors.white, size: 32,)),
