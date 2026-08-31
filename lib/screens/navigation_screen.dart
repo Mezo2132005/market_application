@@ -30,6 +30,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white,
         onTap: (value) {
           setState(() {
             currentTap = value;

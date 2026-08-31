@@ -28,13 +28,7 @@ class ScrollProductList2 extends StatelessWidget {
               "4pcs, Price",
               14.99,
               "White Eggs",
-            ),
-            CardModel(
-              "assets/images/ginger.png",
-              "250gm, Price",
-              10,
-              "Ginger",
-            ),
+            )
           ];
 
 
